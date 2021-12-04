@@ -1,0 +1,418 @@
+body{
+font-family: 'Montserrat', sans-serif;
+font-size:12px;
+background-repeat:repeat-x;
+background-color:#FFF;
+color:#393939;
+}
+
+#container{
+width:970px;
+position:relative;
+margin-left:-485px;
+top:8px;
+left:50%;
+height:1800px;
+}
+
+#header{
+background-color:#FFF;
+width:970px;
+height:510px;
+padding-top:3px;
+padding-bottom:15px;
+}
+
+#menu{
+margin-top: 10px;
+width:115px;
+}
+
+#menu ul{
+position:absolute;
+margin:0;
+padding:0;
+list-style:none;
+}
+
+#menu li, li a{
+margin-bottom: 10px;
+border-radius: 20px;
+background-color:lightgrey;
+overflow:hidden;
+display:block;
+font-size:14px;
+width:115px;
+height:75px;
+text-decoration:none;
+color:black;
+text-align:center;
+}
+
+#menu li a:hover{
+font-weight:bold;
+color:#00B6A2;
+background-color:black;
+text-decoration:none;
+}
+
+#menu li a:active{
+color:red;
+}
+
+#contenu{
+width:970px;
+height:930px;
+}
+
+#texte{
+width:830px;
+margin-left:130px;
+text-align: justify;
+}
+
+#texte h1, #texte h2, #texte h3, #texte h4, #texte h5{
+font-family: 'Dancing Script', cursive;
+}
+
+#texte p{
+font-family: 'Montserrat', sans-serif;
+}
+
+#newban{
+width:970px;
+}
+
+fieldset{
+border:0;
+margin:0;
+padding:0;
+}
+
+h2{
+font-size:19px;
+margin:0;
+width:450px;
+font-family: 'Dancing Script', cursive;
+}
+
+h3{
+font-size:16px;
+font-weight:bold;
+margin:0;
+font-family: 'Dancing Script', cursive;
+}
+
+h4{
+font-size:14px;
+font-weight:bold;
+margin:0;
+height:20px;
+padding-left:10px;
+margin-top:10px;
+font-family: 'Dancing Script', cursive;
+}
+
+/*Petite subtilité pour contourner le soucis des padding sous IE*/
+* html h4{padding-top:20px;}
+
+h5{
+padding-left:15px;
+font-family: 'Dancing Script', cursive;
+}
+
+#contenu a:hover{
+font-weight:bold;
+text-decoration: none;
+}
+
+#contenu a{
+text-decoration: none;
+}
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+}
+
+.barrerecherche {
+    width: 450px;
+    padding: 10px;
+    float: right;
+    margin: -420px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.barrerecherche input {
+    width: 320px;
+    height: 40px;
+    padding: 10px 5px;
+    float: left;
+	font-family: 'Montserrat', sans-serif;
+    border: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.barrerecherche input:focus {
+    outline: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.barrerecherche input::-webkit-input-placeholder {
+   color: grey;
+   font-weight: normal;
+   font-style: italic;
+}
+
+.form-wrapper input:-moz-placeholder {
+    color: grey;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.barrerecherche input:-ms-input-placeholder {
+    color: grey;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Form submit button */
+.barrerecherche button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+    color: black;
+    text-transform: uppercase;
+    background: #00B6A2;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}
+
+.barrerecherche button:hover{
+    background: black;
+	color:#00B6A2;
+}
+
+.barrerecherche button:active, .barrerecherche button:focus{
+    background: red;
+	outline: 0;
+}
+
+.barrerecherche button:before { /* Fleche qui pointe vers la zone de texte */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #00B6A2 transparent;
+    top: 12px;
+    left: -6px;
+}
+
+.barrerecherche button:hover:before{
+border-right-color: black;
+}
+
+.barrerecherche button:focus:before, .barrerecherche button:active:before{
+        border-right-color: red;
+}
+
+.barrerecherche button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}
+
+/* Footer */
+
+.footentier{
+background-color: lightgrey;
+box-sizing: border-box;
+width: 970px;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 30px 30px 0px 30px;
+margin-top: 80px;
+height:300px;
+}
+
+.footentier .footgauche,.footentier .footcentre,.footentier .footdroit{
+display: inline-block;
+font-family: 'Montserrat', sans-serif;
+}
+
+.footentier .footgauche{
+width: 40%;
+height:270px;
+}
+
+.footentier h1{
+color:  black;
+font-family: 'Dancing Script', cursive;
+margin: 0;
+}
+
+.footentier h2 span{
+color:  #00B6A2;
+}
+
+
+.footentier .footliens{
+margin: 20px 0 12px;
+}
+
+.footentier .footliens a{
+display:inline-block;
+text-decoration: none;
+padding:5px;
+color: inherit;
+}
+
+.footentier .footnom{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 60px 50px 100px;
+}
+
+
+.footentier .footcentre{
+width: 35%;
+}
+
+.footentier .footcentre i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+}
+
+.footentier .footcentre i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footentier .footcentre p{
+display: inline-block;
+vertical-align: middle;
+font-size: 15px;
+}
+
+.footentier .footcentre p span{
+display:block;
+font-weight: normal;
+font-size:14px;
+line-height:2;
+}
+
+.footentier .footcentre p a{
+text-decoration: none;
+}
+
+.footentier .footdroit{
+width: 20%;
+}
+
+/* nous sommes */
+
+.footentier .footapropos{
+line-height: 20px;
+font-size: 15px;
+font-weight: normal;
+margin: 0;
+color:black;
+}
+
+/*A propos */
+
+.footentier .footapropos span{
+display: block;
+color:  black;
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.footentier .footicones{
+margin-top: 25px;
+}
+
+.footentier .footicones a{
+display: inline-block;
+width: 35px;
+height: 35px;
+background-color: black;
+border-radius: 2px;
+font-size: 20px;
+color: white;
+text-align: center;
+line-height: 35px;
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+/*Acceuil , étudiant ....*/
+
+#foot a{
+color: black;
+}
+
+#foot a:hover{
+color:#00B6A2
+}
+
+/*mail*/
+
+#mail a{
+  color : black;
+}
+
+#mail a:hover{
+color:#00B6A2;
+}
+
+/* utiliser le bleu #00B6A2 */
+
+#map{
+height: 800px;
+width:800px;
+}
+
+#carte{
+float:right;
+}
+
+.prog{
+width:100px;
+margin-right:25px;
+}
+
+.connexion{
+text-align: center;
+}
+
+.photo{
+text-align: center;
+}
